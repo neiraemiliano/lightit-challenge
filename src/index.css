@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media (min-width: 640px)
+{
+  .box:before,
+  .box:after 
+  {
+    content: "";
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    bottom: 0;
+    z-index: 100;
+    background:radial-gradient(circle at top left, #fff0 70%, #F7F7F7 75%);
+  }
+
+  .box:after {
+    right: 0;
+    top:100%;
+    background:radial-gradient(circle at bottom left, #fff0 70%, #F7F7F7 75%);
+  }
+
+  .box:before {
+    bottom:100%;
+    right: 0;
+  }
+}
+
+@media (min-width: 640px)
+{
+  .button-menu {
+    width: 10px;
+    height: 90px;
+    border-top: 10px solid #EFEFEF;
+    border-bottom: 10px solid #EFEFEF;
+    border-left: 20px solid #F7F7F7;
+    z-index: 0;
+    box-sizing: border-box;
+  }
+}
